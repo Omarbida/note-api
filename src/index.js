@@ -1,4 +1,8 @@
 const dotenv = require("dotenv");
 dotenv.config();
 const db = require("./db");
-db.connect();
+
+async function main() {
+  await db.connect();
+}
+main();
